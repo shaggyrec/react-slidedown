@@ -1,10 +1,13 @@
 {
-  "name": "react-slidedown",
+  "name": "@xavierraffin/react-slidedown",
   "version": "2.4.6",
   "description": "Component for animating height during mount/unmount using a CSS transition",
   "main": "lib/slidedown.js",
   "style": "lib/slidedown.css",
   "types": "lib/slidedown.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "clean": "rimraf '{example,lib,test}/**/*.{js,js.map,d.ts}'",
     "test": "npm run build && karma start --single-run",
@@ -14,6 +17,7 @@
     "build:watch": "tsc -w",
     "example:watch": "watchify ./example/index.js -o ./example/bundle.js",
     "example:serve": "live-server --open=./example --port=5555",
+    "release": "npm publish --registry=https://npm.pkg.github.com",
     "start": "concurrently \"npm run build:watch\" \"npm run example:watch\" \"npm run example:serve\" --kill-others"
   },
   "author": "Frank Wallis",
@@ -54,7 +58,10 @@
     "lib/**/*.css",
     "lib/**/*.d.ts"
   ],
-  "repository": "frankwallis/react-slidedown",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xavierraffin/react-slidedown.git"
+  },
   "keywords": [
     "react",
     "animation",
