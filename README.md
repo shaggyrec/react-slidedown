@@ -1,6 +1,6 @@
-This is a fork of [react-slidedown]() with zero code change but just a package ready to install.
+This is a fork of [react-slidedown]() with zero code change but just [a package](https://github.com/xavierraffin/react-slidedown/packages/617417) ready to install.
 
-To install teh package you can do:
+To install the package you can do:
 
 ```sh
 npm install @xavierraffin/react-slidedown@2.4.6 --save
